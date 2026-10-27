@@ -1,1 +1,2 @@
-export const BLOB = "https://jsonblob.com/01a176fc-8799-716a-9993-927df8a135fb";
+export const SB_URL = "https://yprcndnwzilpgeekrhin.supabase.co";
+export const SB_KEY = "sb_publishable_ZXI9CY1Vn-z2rtDalqkrIg_LxWdAFLm";

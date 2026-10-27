@@ -52,17 +52,17 @@ footer a{color:var(--mut)}
 <a class="float" id="fwa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 <div class="ov" id="ov"></div>
 <script type="module">
-import {BLOB} from "./config.js";
+import {SB_URL,SB_KEY} from "./config.js";
 const WA="2348155074037",KINDS=["House / Duplex","Flat / Apartment","Land","Commercial","Self-contain / Room"];
 let last="",P=[],F={q:"",t:"",k:""},view="home",D=null,user=null,loaded=false,fail="";
-const ID=(String(BLOB).match(/[0-9a-zA-Z-]{12,}\/?$/)||[""])[0].replace("/",""),ok=!!ID&&!String(BLOB).startsWith("PASTE"),API="https://jsonblob.com/api/jsonBlob/"+ID,srt=a=>a.slice().sort((x,y)=>(y.createdAt||0)-(x.createdAt||0));
+const ok=!!SB_URL&&!String(SB_URL).startsWith("PASTE"),srt=a=>a.slice().sort((x,y)=>(y.createdAt||0)-(x.createdAt||0));
 const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const price=p=>"₦"+Number(p.price||0).toLocaleString("en-NG")+(p.type==="rent"?" / year":"");
 const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
 const inq=p=>wa("Hello A.O SOARING ESTATE 👋\nI’m interested in this property:\n🏠 "+p.title+"\n📍 "+p.loc+"\n💰 "+price(p)+"\nRef: "+p.id);
 const hi=wa("Hello A.O SOARING ESTATE, I’d like to enquire about your properties.");
 $("#hwa").href=hi;$("#fwa").href=hi;
-async function load(){try{const r=await fetch(API,{headers:{Accept:"application/json"},cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const t=await r.text();if(loaded&&t===last)return;last=t;P=srt((JSON.parse(t).props||[]).map(p=>({...p,imgs:p.imgs||[]})));loaded=true;fail=""}catch(e){fail=e.message}refresh()}
+async function load(){try{const r=await fetch(SB_URL+"/rest/v1/properties?select=data,created_at&order=created_at.desc",{headers:{apikey:SB_KEY},cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const t=await r.text();if(loaded&&t===last)return;last=t;P=JSON.parse(t).map(x=>({...x.data,imgs:(x.data&&x.data.imgs)||[]}));loaded=true;fail=""}catch(e){fail=e.message}refresh()}
 if(ok){load();setInterval(()=>{if(!document.hidden&&!$("#ov").hasAttribute("data-open")&&document.activeElement.id!=="fq")load()},30000)}
 function refresh(){home()}
 function home(){
