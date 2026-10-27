@@ -1,15 +1,12 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>A.O SOARING ESTATE</title>
-<style>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>A.O SERVICES</title><style>
 :root{--bg:#f6f4ef;--card:#fff;--tx:#1b2a24;--mut:#667a70;--pri:#5a1e0a;--acc:#ff6a00;--bd:#e3dfd3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101613;--card:#18211c;--tx:#eef2ee;--mut:#9aa8a0;--pri:#ff7a1f;--acc:#ff9a4d;--bd:#2a362f}}
 :root[data-theme="dark"]{--bg:#101613;--card:#18211c;--tx:#eef2ee;--mut:#9aa8a0;--pri:#ff7a1f;--acc:#ff9a4d;--bd:#2a362f}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 body.lock{overflow:hidden}
-header{background:#fff;color:#5a1e0a;padding:8px 16px;border-bottom:4px solid #ff6a00}.logo{height:56px;width:auto;display:block}
+header{background:#fff;color:#5a1e0a;padding:8px 16px;border-bottom:4px solid #ff6a00}.logo{height:50px;width:auto;display:block}
 .wrap{max-width:1100px;margin:0 auto;padding:0 14px}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0}
 .brand{font-weight:800;letter-spacing:.06em;font-size:1.1rem}.brand small{display:block;font-weight:400;letter-spacing:0;opacity:.85;font-size:.78rem}
@@ -44,42 +41,42 @@ footer{padding:20px 14px 40px;text-align:center;color:var(--mut);font-size:.85re
 footer a{color:var(--mut)}
 .float{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:99px;background:#1fa855;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:10}
 @media(max-width:560px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/3}.row{grid-template-columns:1fr}}
-.err{color:#c0392b}label{display:grid;gap:4px;font-size:.9rem;color:var(--mut)}</style></head>
-<body>
-<header><div class="wrap"><img class="logo" src="logo.png" alt="A.O SOARING ESTATE LTD – Lets Build Nations"><a class="btn" id="hwa" target="_blank" rel="noopener">WhatsApp us</a></div></header>
+.err{color:#c0392b}label{display:grid;gap:4px;font-size:.9rem;color:var(--mut)}.brandrow{display:flex;align-items:center;gap:10px}.bn{font-weight:800;letter-spacing:.05em;color:#5a1e0a;font-size:1.05rem;line-height:1.1}.bt{color:#ff6a00;font-size:.8rem}
+.filters{display:block!important}.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px}.chip{white-space:nowrap;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:99px;padding:6px 14px;cursor:pointer;font:inherit}.chip.on{background:var(--pri);color:#fff;border-color:var(--pri)}</style></head><body>
+<header><div class="wrap"><div class="brandrow"><img id="blogo" class="logo" src="data:image/png;base64,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" alt=""><div id="btxt"><div class="bn" id="bname">A.O SERVICES</div><div class="bt" id="btag">Lets Build Nations</div></div></div><a class="btn" id="hwa" target="_blank" rel="noopener">WhatsApp us</a></div></header>
 <div class="wrap" id="app"></div>
-<footer>© A.O SOARING ESTATE LTD</footer>
+<footer id="foot">© A.O SERVICES</footer>
 <a class="float" id="fwa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 <div class="ov" id="ov"></div>
 <script type="module">
 import {SB_URL,SB_KEY} from "./config.js";
-const WA="2348155074037",KINDS=["House / Duplex","Flat / Apartment","Land","Commercial","Self-contain / Room"];
-let last="",P=[],F={q:"",t:"",k:""},view="home",D=null,user=null,loaded=false,fail="";
-const ok=!!SB_URL&&!String(SB_URL).startsWith("PASTE"),srt=a=>a.slice().sort((x,y)=>(y.createdAt||0)-(x.createdAt||0));
+let last="",P=[],S={},F={q:"",c:""},loaded=false,fail="";
+const ok=!!SB_URL&&!String(SB_URL).startsWith("PASTE");
 const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const price=p=>"₦"+Number(p.price||0).toLocaleString("en-NG")+(p.type==="rent"?" / year":"");
-const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
-const inq=p=>wa("Hello A.O SOARING ESTATE 👋\nI’m interested in this property:\n🏠 "+p.title+"\n📍 "+p.loc+"\n💰 "+price(p)+"\nRef: "+p.id);
-const hi=wa("Hello A.O SOARING ESTATE, I’d like to enquire about your properties.");
-$("#hwa").href=hi;$("#fwa").href=hi;
-async function load(){try{const r=await fetch(SB_URL+"/rest/v1/properties?select=data,created_at&order=created_at.desc",{headers:{apikey:SB_KEY},cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const t=await r.text();if(loaded&&t===last)return;last=t;P=JSON.parse(t).map(x=>({...x.data,imgs:(x.data&&x.data.imgs)||[]}));loaded=true;fail=""}catch(e){fail=e.message}refresh()}
-if(ok){load();setInterval(()=>{if(!document.hidden&&!$("#ov").hasAttribute("data-open")&&document.activeElement.id!=="fq")load()},30000)}
-function refresh(){home()}
+const MARK=$("#blogo").src;
+const norm=p=>{p={...p};p.imgs=p.imgs||[];p.cat=p.cat||"Properties";if(p.note===undefined)p.note=p.type==="rent"?"per year":"";if(p.details===undefined)p.details=[p.beds?p.beds+" bed":"",p.baths?p.baths+" bath":"",p.kind||""].filter(Boolean).join(" · ");p.title=p.title||"";p.loc=p.loc||"";p.desc=p.desc||"";return p};
+const price=p=>p.price?"₦"+Number(p.price).toLocaleString("en-NG")+(p.note?" · "+p.note:""):"Contact for price";
+
+const bn=()=>S.name||"A.O SERVICES";
+const num=()=>{let d=String(S.whatsapp||"2348155074037").replace(/\D/g,"");if(d.startsWith("0"))d="234"+d.slice(1);return d};
+const wa=t=>"https://wa.me/"+num()+"?text="+encodeURIComponent(t);
+const inq=p=>wa("Hello "+bn()+" 👋\nI’m interested in this:\n📌 "+p.title+"\n🏷 "+p.cat+"\n📍 "+(p.loc||"-")+"\n💰 "+price(p)+"\nRef: "+p.id);
+function brand(){$("#bname").textContent=bn();$("#btag").textContent=S.tag===undefined?"Lets Build Nations":S.tag;$("#btxt").style.display=S.logo?"none":"";$("#blogo").src=S.logo||MARK;document.title=bn();$("#foot").textContent="© "+bn();const h=wa("Hello "+bn()+", I’d like to enquire about your listings.");$("#hwa").href=h;$("#fwa").href=h}
+async function load(){try{const r=await fetch(SB_URL+"/rest/v1/properties?select=id,data,created_at&order=created_at.desc",{headers:{apikey:SB_KEY},cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const t=await r.text();if(loaded&&t===last)return;last=t;const rows=JSON.parse(t);S=(rows.find(x=>x.id==="_settings")||{}).data||{};P=rows.filter(x=>x.id!=="_settings").map(x=>norm({...x.data,id:x.id}));loaded=true;fail="";brand()}catch(e){fail=e.message}home()}
 function home(){
- const q=F.q.toLowerCase(),L=P.filter(p=>(!F.t||p.type===F.t)&&(!F.k||p.kind===F.k)&&(!q||(p.title+" "+p.loc+" "+p.desc).toLowerCase().includes(q)));
- const msg=!ok?"App not set up yet.":fail?"Could not load properties: "+esc(fail):!loaded?"Loading properties…":"No properties match. Try a different search.";
- $("#app").innerHTML='<div class="hero"><h1>Find your next home</h1><p>Houses, flats and land for sale or rent across Nigeria.</p></div>'+
- '<div class="filters"><input id="fq" placeholder="Search city, area or title" value="'+esc(F.q)+'"><select id="ft"><option value="">Buy or rent</option><option value="sale"'+(F.t=="sale"?" selected":"")+'>For sale</option><option value="rent"'+(F.t=="rent"?" selected":"")+'>For rent</option></select><select id="fk"><option value="">All types</option>'+KINDS.map(k=>'<option'+(F.k==k?" selected":"")+'>'+k+'</option>').join("")+'</select></div>'+
- '<div class="grid">'+(L.length?L.map(p=>'<div class="card" data-id="'+esc(p.id)+'"><div class="ph">'+(p.imgs[0]?'<img src="'+p.imgs[0]+'" alt="">':"🏠")+'<span class="tag">'+(p.type=="rent"?"For rent":"For sale")+'</span>'+(p.sold?'<span class="tag sold">'+(p.type=="rent"?"Taken":"Sold")+'</span>':"")+'</div><div class="cb"><div class="price">'+price(p)+'</div><div>'+esc(p.title)+'</div><div class="mut">📍 '+esc(p.loc)+'</div><div class="mut">'+(p.beds?"🛏 "+p.beds+" ":"")+(p.baths?" 🚿 "+p.baths:"")+" · "+esc(p.kind)+'</div><a class="btn wa" target="_blank" rel="noopener" href="'+inq(p)+'">I’m interested</a></div></div>').join(""):'<p class="mut">'+msg+'</p>')+'</div>';
+ const q=F.q.toLowerCase(),cats=[...new Set(P.map(p=>p.cat))],L=P.filter(p=>(!F.c||p.cat===F.c)&&(!q||(p.title+" "+p.loc+" "+p.desc+" "+p.cat+" "+p.details).toLowerCase().includes(q)));
+ const msg=!ok?"App not set up yet.":fail?"Could not load listings: "+esc(fail):!loaded?"Loading…":"Nothing found. Try another search.";
+ $("#app").innerHTML='<div class="hero"><h1>Browse listings</h1><p>Properties, cars and more. Tap “I’m interested” to chat on WhatsApp.</p></div><div class="filters"><input id="fq" placeholder="Search what you need" value="'+esc(F.q)+'"></div><div class="chips">'+["",...cats].map(c=>'<button class="chip'+(F.c===c?" on":"")+'" data-c="'+esc(c)+'">'+(c||"All")+'</button>').join("")+'</div><div class="grid">'+(L.length?L.map(p=>'<div class="card" data-id="'+esc(p.id)+'"><div class="ph">'+(p.imgs[0]?'<img src="'+p.imgs[0]+'" alt="">':"🛍")+'<span class="tag">'+esc(p.cat)+'</span>'+(p.sold?'<span class="tag sold">Sold</span>':"")+'</div><div class="cb"><div class="price">'+price(p)+'</div><div>'+esc(p.title)+'</div>'+(p.loc?'<div class="mut">📍 '+esc(p.loc)+'</div>':"")+(p.details?'<div class="mut">'+esc(p.details)+'</div>':"")+'<a class="btn wa" target="_blank" rel="noopener" href="'+inq(p)+'">I’m interested</a></div></div>').join(""):'<p class="mut">'+msg+'</p>')+'</div>';
  $("#fq").oninput=e=>{F.q=e.target.value;clearTimeout(home.t);home.t=setTimeout(()=>{home();const i=$("#fq");i.focus();i.setSelectionRange(99,99)},250)};
- $("#ft").onchange=e=>{F.t=e.target.value;home()};$("#fk").onchange=e=>{F.k=e.target.value;home()};
+ document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{F.c=b.dataset.c;home()});
  document.querySelectorAll(".card").forEach(c=>c.onclick=e=>{if(e.target.closest("a"))return;openP(c.dataset.id)});
 }
-function ph(p,i){const im=p.imgs[i||0];return '<div class="ph">'+(im?'<img src="'+im+'" alt="">':"🏠")+'</div>'}
+function ph(p,i){const im=p.imgs[i||0];return '<div class="ph">'+(im?'<img src="'+im+'" alt="">':"🛍")+'</div>'}
 function openP(id){const p=P.find(x=>x.id===id);if(!p)return;
- $("#ov").innerHTML='<div class="modal"><div class="gal">'+(p.imgs.length?p.imgs.map((_,i)=>ph(p,i)).join(""):ph(p))+'</div><div class="mb"><button class="btn ghost sm x" id="cl">Close ✕</button><div class="price" style="font-size:1.4rem">'+price(p)+'</div><h2 style="margin:0">'+esc(p.title)+'</h2><div class="mut">📍 '+esc(p.loc)+' · '+esc(p.kind)+(p.beds?" · 🛏 "+p.beds:"")+(p.baths?" · 🚿 "+p.baths:"")+'</div><p style="white-space:pre-wrap;margin:6px 0">'+esc(p.desc)+'</p><a class="btn wa" target="_blank" rel="noopener" href="'+inq(p)+'">💬 I’m interested in this – message on WhatsApp</a></div></div>';
+ $("#ov").innerHTML='<div class="modal"><div class="gal">'+(p.imgs.length?p.imgs.map((_,i)=>ph(p,i)).join(""):ph(p))+'</div><div class="mb"><button class="btn ghost sm x" id="cl">Close ✕</button><div class="price" style="font-size:1.4rem">'+price(p)+'</div><h2 style="margin:0">'+esc(p.title)+'</h2><div class="mut">'+esc(p.cat)+(p.loc?" · 📍 "+esc(p.loc):"")+'</div>'+(p.details?'<div class="mut">'+esc(p.details)+'</div>':"")+'<p style="white-space:pre-wrap;margin:6px 0">'+esc(p.desc)+'</p><a class="btn wa" target="_blank" rel="noopener" href="'+inq(p)+'">💬 I’m interested – message on WhatsApp</a></div></div>';
  $("#ov").setAttribute("data-open","");document.body.classList.add("lock");
  $("#cl").onclick=closeP;$("#ov").onclick=e=>{if(e.target.id==="ov")closeP()}}
 function closeP(){$("#ov").removeAttribute("data-open");$("#ov").innerHTML="";document.body.classList.remove("lock")}
-home();
+brand();home();
+if(ok){load();setInterval(()=>{if(!document.hidden&&!$("#ov").hasAttribute("data-open")&&document.activeElement.id!=="fq")load()},30000)}
 </script></body></html>
